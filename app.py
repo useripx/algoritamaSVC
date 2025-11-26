@@ -4,13 +4,13 @@ import pandas as pd
 import numpy as np
 
 # Judul
-st.set_page_config(page_title="Prediksi Pembelian Lisensi Windows Toko Lisensi Official Kediri", layout="centered")
+st.set_page_config(page_title="Prediksi Pembelian Windows (di Toko Lisensi Official Kediri)", layout="centered")
 st.title('Prediksi Pembelian Lisensi Windows Toko Lisensi Official Kediri')
-st.subheader('Menggunakan Algoritma Support Vector Classifier (SVC)')
+st.subheader('Menggunakan Algoritma Random Forest')
 st.subheader('Kelompok 1')
 st.subheader('Yogi Ario Pratama | 2313020004')
-st.subheader('Shandy P | 000000000')
-st.subheader('Fardani | 000000000')
+st.subheader('Shandy P | 2313020069')
+st.subheader('Achmad Fardani | 232302008')
 
 # baca model
 MODEL_FILE = 'beli_windows.pkl' 
@@ -77,3 +77,4 @@ if submitted:
     model_name = model_pipeline.steps[1][0]
 
     st.info(f"Prediksi dilakukan menggunakan model terbaik ({model_name}).")
+
