@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 
 # Judul
-st.set_page_config(page_title="Prediksi Pembelian Windows (di Toko A)", layout="centered")
-st.title('Prediksi Pembelian Lisensi Windows')
+st.set_page_config(page_title="Prediksi Pembelian Lisensi Windows Toko Lisensi Official Kediri", layout="centered")
+st.title('Prediksi Pembelian Lisensi Windows Toko Lisensi Official Kediri')
 st.subheader('Menggunakan Algoritma Support Vector Classifier (SVC)')
 st.subheader('Kelompok 1')
 st.subheader('Yogi Ario Pratama | 2313020004')
@@ -75,4 +75,5 @@ if submitted:
         
     # hasil
     model_name = model_pipeline.steps[1][0]
+
     st.info(f"Prediksi dilakukan menggunakan model terbaik ({model_name}).")
